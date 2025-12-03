@@ -1,3 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
 body {
-  font-family: verdana;
+  background: linear-gradient(135deg, #1a1d29, #23283b);
+  color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Main card container */
+main {
+  background: #2e3247;
+  padding: 25px 35px;
+  border-radius: 18px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+  width: 420px;
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Search controls */
+#search-input {
+  width: 70%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  margin-right: 6px;
+  background: #181a26;
+  color: #fff;
+  box-shadow: inset 0 0 7px rgba(0,0,0,0.5);
+}
+
+#search-button {
+  padding: 10px 15px;
+  background: #4a8fff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#search-button:hover {
+  background: #7eb0ff;
+}
+
+/* Creature title */
+h1 {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+#creature-id {
+  margin-left: 8px;
+  opacity: 0.8;
+  font-size: 22px;
+}
+
+/* Attributes */
+#weight,
+#height,
+#types {
+  display: block;
+  margin: 8px 0;
+  text-align: center;
+}
+
+#types span.type {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 4px;
+  border-radius: 12px;
+  font-size: 14px;
+  text-transform: capitalize;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Type coloring */
+.type.fire { background: #f56f64; }
+.type.water { background: #5daeff; }
+.type.grass { background: #76d97e; }
+.type.electric { background: #f8dd59; color: #000; }
+.type.ice { background: #8eeaff; }
+.type.poison { background: #b678d6; }
+.type.bug { background: #a3c957; }
+.type.dark { background: #5b5b5b; }
+.type.dragon { background: #7b6cff; }
+.type.fairy { background: #f7b8ff; }
+.type.normal { background: #bdbdbd; }
+.type.fighting { background: #d86a6a; }
+.type.psychic { background: #ff6aa6; }
+
+/* Stats table */
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+table tr:first-child td {
+  font-size: 18px;
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+}
+
+table td:first-child {
+  font-weight: bold;
+  width: 50%;
+  opacity: 0.85;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
