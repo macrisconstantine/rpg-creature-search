@@ -1,2 +1,2 @@
 # rpg-creature-search
-Minimal (and with gpt-generated styles) tool that connects to an API to search for some rpg-creatures. 
+Minimal (and with gpt-generated styles) tool that connects to an API to search for some rpg-creatures. Final required project for JavaScript Algorithms and Data Structures V8 certification from freeCodeCamp.
